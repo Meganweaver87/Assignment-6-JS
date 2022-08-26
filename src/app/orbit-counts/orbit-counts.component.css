@@ -1,14 +1,22 @@
+h3 {
+	color:rgb(135, 124, 104);
+	font-size: larger;
+
+}
+
 .counts {
-	background: #34495E;
-	color: #fff;
+	background: #d0b00d;
+	color: rgb(135, 124, 104);
 	border-radius: 5px;
 	width: 225px;
 }
 
 .counts div {
 	padding: 8px;
+	font-size: larger;
 }
 
 .counts span {
 	float: right;
+	font-size: larger;
 }

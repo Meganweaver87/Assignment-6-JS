@@ -13,30 +13,30 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-		  OrbitListComponent,
-		  OrbitCountsComponent
+		    OrbitListComponent,
+		    OrbitCountsComponent
       ],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-	fixture = TestBed.createComponent(AppComponent);
-	component = fixture.debugElement.componentInstance;
-	element = fixture.debugElement;
+	  fixture = TestBed.createComponent(AppComponent);
+	  component = fixture.debugElement.componentInstance;
+	  element = fixture.debugElement;
 
-	fixture.detectChanges();
+	  fixture.detectChanges();
  });
 
- it('should create', () => {
-	expect(component).toBeTruthy();
- });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 
- it('should contain the list component', async(() => {
-	const fixture = TestBed.createComponent(AppComponent);
-	fixture.detectChanges();
-	const compiled = fixture.debugElement.nativeElement;
-	expect(compiled.querySelector('app-orbit-list')).not.toBe(null);
- }));
+  it('should contain the list component', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('app-orbit-list')).not.toBe(null);
+  }));
 
 
 });

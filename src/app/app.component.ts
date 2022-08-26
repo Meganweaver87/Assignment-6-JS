@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { Satellite } from './satellite';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'orbit-report';
+ 	title = 'orbit-report';
 
-  sourceList: Satellite[];
-  displayList: Satellite[];
+  	sourceList: Satellite[];
+  	displayList: Satellite[];
 
 	constructor() {
 		this.sourceList = [];
@@ -30,7 +30,7 @@ export class AppComponent {
 				 }
 
 				 // make a copy of the sourceList to be shown to the user
-				 this.displayList = this.sourceList.slice(0);
+				this.displayList = this.sourceList.slice(0);
 	  
 			}.bind(this));
 		}.bind(this));
@@ -46,10 +46,9 @@ export class AppComponent {
 				matchingSatellites.push(this.sourceList[i]);
 			}
 		}
-		// assign this.displayList to be the array of matching satellites
+		// assign this.displayList = array of matching satellites
 		// this will cause Angular to re-make the table, but now only containing matches
 		this.displayList = matchingSatellites;
 	}
-
 
 }
