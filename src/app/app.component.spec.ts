@@ -25,7 +25,7 @@ describe('AppComponent', () => {
 	  element = fixture.debugElement;
 
 	  fixture.detectChanges();
- });
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();

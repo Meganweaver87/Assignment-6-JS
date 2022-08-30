@@ -12,7 +12,7 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
-   }
+   	}
 	
 	isSpaceDebris(): boolean {
 
@@ -22,6 +22,6 @@ export class Satellite {
 			return false;
 		}
 
-   };
+   	};
 
 };

@@ -1,12 +1,13 @@
 <body>
-<h1>Orbit Report</h1>
+	
+	<h1>Orbit Report</h1>
 
-<div class="search-form">
-	Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm"/>
-	<button (click)="search(searchTerm.value);">Search</button>
-</div>
+	<div class="search-form">
+		Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm"/>
+		<button (click)="search(searchTerm.value);">Search</button>
+	</div>
 
-<app-orbit-counts [satellites]="displayList"></app-orbit-counts>
-<app-orbit-list [satellites]="displayList"></app-orbit-list>
+	<app-orbit-counts [satellites]="displayList"></app-orbit-counts>
+	<app-orbit-list [satellites]="displayList"></app-orbit-list>
 
 </body>
